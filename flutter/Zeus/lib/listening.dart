@@ -189,7 +189,7 @@ class _ListenState extends State<Listen> {
               url = "http://192.168.29.194:5000/api?Query=open%20google";
               Getdata(url);
             } else if (_speech.lastRecognizedWords == 'WhatsApp me') {
-              final String phone = "917060164066";
+              final String phone = "<your phone no.>";
               launch("whatsapp://send?phone=$phone");
               flutterTts.speak("sending message to you");
             }
